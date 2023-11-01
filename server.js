@@ -58,7 +58,11 @@ bidderNamespace.on('connection', (socket) => {
                 if(bidderArr) {
                     let isTrue = false;
                     bidderArr.forEach((element) => {
-                        if(bidder.id == element.id || bidder.name == element.name) {
+                        if(bidder.id == element.id || bidder.name.toLowerCase() == element.name.toLowerCase()) {
+                            console.log("This is element: ")
+                            console.log(element)
+                            console.log("This is bidder: ")
+                            console.log(bidder)
                             isTrue = true;
                         }
                     })
