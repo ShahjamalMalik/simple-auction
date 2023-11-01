@@ -32,10 +32,13 @@ A real-time web application that allows auctioneers to create an auction for an 
 - Bidder sets highest bid
 ![Bidder sets highest bid](public/img/sethighestbid.png)
 - Auction results 
+
 ![Auction results](public/img/auctioneerresults.png)
 - Auction end for the auctioneer
+
 ![Auction end for the auctioneer](public/img/auctionendauctioneer.png)
 - Auction end for the bidder
+
 ![Auction end for the bidder](public/img/auctionendbidder.png)
 ### Installing
 
