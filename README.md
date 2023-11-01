@@ -23,6 +23,7 @@ A real-time web application that allows auctioneers to create an auction for an 
 - Auctioneer interface for starting an auction when you access localhost:3000/auctioneer
 ![Auctioneer interface for starting an auction](public/img/auctioneerstartauction.png)
 - Auctioneer interface after you start an auction
+
 ![Auctioneer interface after you start an auction](public/img/auctioneerinterface.png)
 - Bidder interface when an auction is started
 ![Bidder interface when an auction is started](public/img/bidderinterface.png)
