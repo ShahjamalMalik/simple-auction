@@ -1,0 +1,67 @@
+<!-- "StAuth10222: I Shahjamal Malik, 000367974 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else." -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auctioneer Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Auctioneer Page</h1>
+    <form id="auctioneerForm">
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" required><br>
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" min="0" required><br>
+
+      <label for="timeLimit">Time Limit (10-80 seconds):</label>
+      <input type="range" id="timeLimit" min="10" max="80" step="10" value="10"><br>
+
+      <p id="selectedTime">Selected Time: <span id="timeValue">10</span> seconds</p>
+
+      <button id="startAuctionButton">Start Auction</button>
+    </form>
+    
+    <button id="newAuctionButton" style="display: none;">Start New Auction</button>
+
+    <p id="timerDisplay" style="display: none;"></p>
+    <div id="resultsSection" style="display: none">
+      <h2>Auction Results</h2>
+      <p>Highest Bid: <span id="highestBid"></span></p>
+      <p>Highest Bidder: <span id="highestBidder"></span></p>
+      <p>Total Bids: <span id="totalBids"></span></p>
+      <h3>Bidders:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Bidder Name</th>
+            <th>Highest Bid</th>
+            <th>Number of Bids</th>
+          </tr>
+        </thead>
+        <tbody id="bidderTableBody">
+          <!-- Bidder data rows will be added here dynamically -->
+        </tbody>
+      </table>
+      <h3>Bid History:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Bidder Name</th>
+            <th>Bid Price</th>
+          </tr>
+        </thead>
+        <tbody id="bidHistoryTableBody">
+          <!-- Bid history rows will be added here dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/auctioneer.js"></script>
+</body>
+</html>

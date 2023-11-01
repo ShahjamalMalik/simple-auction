@@ -1,0 +1,74 @@
+/* styles.css 
+//"StAuth10222: I Shahjamal Malik, 000367974 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else."
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  form {
+    text-align: center;
+    padding-right: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p#selectedTime {
+    color: #555;
+  }
+  
+  p#timerDisplay {
+    padding-top: 10px;
+  }
+  button#newAuctionButton {
+    display: none;
+    margin: 0 auto;
+  }
+  
+  div#auctionResults {
+    display: none;
+  }
+  
