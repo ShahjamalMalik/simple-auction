@@ -63,21 +63,6 @@ node server.js
 ![Auction end for the bidder](public/img/auctionendbidder.png)
 
 
-### Using the program
-
-* After the server is started Go to localhost:3000/bidder however many times to set up how many bidders you want to participate in the auction 
-* You will be met with a waiting for the next auction to begin message for the bidders
-* Go to localhost:3000/auctioneer on another window/tab and set up an auction
-* After inputting the details of the auction and submitting the auction the auctioneer and bidder will get their own interface 
-* The bidders can now place bids and in their interface they can actively see the highest bidder and highest bid in real time. 
-* If a bidder places a bid too low they will get an error message accordingly
-* The auctioneer will also be able to see details such as highest bidder and highest bid as well as a history of the bids
-
-```
-node server.js
-```
-
-
 
 
 
